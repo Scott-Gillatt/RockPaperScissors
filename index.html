@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>RockPaperScissors</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3 text-center">
+            <button id="rock" class="btn btn-default" onclick="game.play('rock')"><i class="fa fa-hand-rock-o" aria-hidden="true"></i></button>
+            </div>
+            <div class="col-md-3 text-center">
+            <button id="paper" class="btn btn-default" onclick="game.play('paper')"><i class="fa fa-hand-paper-o" aria-hidden="true"></i></button>
+            </div>
+            <div class="col-md-3 text-center">
+            <button id="scissors" class="btn btn-default" onclick="game.play('scissors')"><i class="fa fa-hand-scissors-o" aria-hidden="true"></i></button>
+            </div>
+        </div>
+        <div class="row text-center">
+            <p>The Winner is: <span id="winner">?</span></p>
+        </div>
+        <div>
+            <button class="btn btn-default" onclick="game.start()">Play Again</button>
+        </div>
+    </div>
+    
+    <script src="app.js "></script>
+    <script>
+        var game = new RockPaperScissors();
+        
+        game.start();
+    </script>
+</body>
+
+</html>

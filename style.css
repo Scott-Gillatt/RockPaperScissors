@@ -1,0 +1,21 @@
+#rock{
+    background-color: brown;
+    color: white;
+    height: 100px;
+    width: 100px;
+}
+#paper{
+    background-color: white;
+    color: black;
+    height: 100px;
+    width: 100px;
+}
+#scissors{
+    background-color: blueviolet;
+    color: white;
+    height: 100px;
+    width: 100px;
+}
+#winner{
+    color: darkred;
+}
